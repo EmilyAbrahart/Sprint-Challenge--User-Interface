@@ -211,10 +211,17 @@ footer nav a {
 
 /* About Page */
 
+    
 .about-top-content{
     margin-bottom: 30px;
     padding: 0 10px 20px;
     border-bottom: 1px dashed black;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-top-content{
+        padding: 20px 40px;
+    }
 }
 
 .about-box-container{
@@ -229,10 +236,23 @@ footer nav a {
     border-bottom: 1px dashed black;
 }
 
+@media only screen and (max-width: 600px) {
+    .about-box{
+     width: 80%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    } 
+ }
+
 .about-box-text{
     padding: 10px 0;
 }
-
+@media only screen and (max-width: 600px) {
+    .about-box{
+        padding: 20px;
+    }
+}
 button.learn-more{
     padding: 10px 20px;
     margin-bottom: 20px;
@@ -245,6 +265,12 @@ button.learn-more{
 .about-bottom-content{
     margin-bottom: 30px;
     padding: 0 10px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-bottom-content{
+        padding: 20px 40px;
+    }
 }
 
 /* Contact Page*/
